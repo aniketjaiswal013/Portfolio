@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars side" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Aniket</span><br> Jaiswal From India</h2>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------About Sectoion---------- -->
+     <div id="about">
+        <div class="container">
+             <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/photo2.png">
+                        </div>
+
+                    <div class="about-col-2">
+
+                      <h2 class="sub-title">About Me</h2>
+                      <p>I am a passionate web developer skilled in creating dynamic and responsive websites using HTML, CSS, and JavaScript. With a strong foundation in Data Structures and Algorithms (DSA), I excel in problem-solving and efficient coding. Proficient in C and C++, I also have a solid grasp of Object-Oriented Programming (OOP) principles. I enjoy tackling complex challenges and continuously improving my technical skills. My goal is to contribute innovative solutions and deliver high-quality projects.</p>
+                
+                            <div class="tab-titles">
+                                <div class="tab-links active-links" onclick="opentab('skills')">Skills</div>
+                                <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                                <div class="tab-links" onclick="opentab('education')">Education</div>
+                            </div>
+
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                    <li><span>App Development</span><br>Building Android/ios apps</li>
+                                </ul>     
+                            </div>
+
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                <li><span>Currency Converter</span><br>Developed a real-time currency converter using API integration to provide accurate exchange rates</li>
+                                <li><span>Tic Tac Toe</span><br>Created an interactive Tic-Tac-Toe game with a responsive design and AI opponent.</li>
+                                <li><span>Rock Paper Scissors</span><br>Built a Rock-Paper-Scissors game with a user-friendly interface and random opponent moves</li>
+                                </ul>     
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                            <li><span>2019</span><br>Class 10th from Dayanand Vidyalaya,Asansol, Percentage: 79% </li>
+                            <li><span>2021</span><br>Class 12th from Burnpur Boy's High School,Burnpur, Percentage: 75%</li>
+                            <li><span>2021-2025</span><br>Engineering form Ideal Institute of Engineering,Kalyani, CGPA: 8/10</li>
+                            </ul>     
+                       </div>
+    
+                    </div>
+             </div>
+        </div>
+    </div>
+    
+<!-- -----FOR Services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I specialize in creating visually appealing and user-friendly web designs, focusing on responsive layouts and intuitive navigation. Proficient in HTML, CSS, and JavaScript, I ensure seamless user experiences across devices. My designs prioritize both aesthetics and functionality, enhancing user engagement. I stay updated with the latest design trends to deliver modern and innovative solutions.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>I excel in designing intuitive and engaging user interfaces that enhance overall user experience. With a keen eye for detail, I create wireframes, prototypes, and user flows that prioritize usability and accessibility. Proficient in design tools like Figma and Adobe XD, I ensure visually appealing and functional designs. My approach is user-centered, focusing on delivering solutions that meet user needs and business goals.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Development</h2>
+                <p>I specialize in developing robust and user-friendly mobile applications for both Android and iOS platforms. Proficient in languages such as Java, Kotlin, and Swift, I create seamless and responsive app experiences. My focus is on delivering high-performance apps with intuitive interfaces and smooth functionality. I stay updated with the latest technologies to build innovative and scalable mobile solutions.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------For Portfolio------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Currency Converter</h3>
+                    <p>Developed a real-time currency converter using API integration to provide accurate exchange rates</p>
+                    <a href="https://rate-x-change.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Tic Tac Toe</h3>
+                    <p>Created an interactive Tic-Tac-Toe game with a responsive design and AI opponent.</p>
+                    <a href="https://zeros-and-crosses.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>Built a Rock-Paper-Scissors game with a user-friendly interface and random opponent moves</p>
+                    <a href="https://clash-of-gestures.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/aniketjaiswal013" target="_blank" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- -----Contact Me ------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>aniketjaiswal6797@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>6297169281</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100072331794965" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/JaiswalAni50425" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/anik_etjaiswal13/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aniket-jaiswal-043322232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/aniketjaiswal013" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                 <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+                 <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Aniket. Made with <i class="fa-solid fa-heart"></i> 2024</p>
+    </div>
+</div>
+
+
+
+     <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents")
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-links");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-links");
+                document.getElementById(tabname).classList.add("active-tab");
+            } 
+
+     </script>
+     <script>
+        var sidemanu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemanu.style.right="0";
+        }
+        function closemenu(){
+            sidemanu.style.right="-200px";
+        }
+     </script>
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxETzHv8rieYTBDo_NCeJMA9rTToAxtAiU18PvmdyoL7wG9JGFA07Zkal52SpXhTDXU/exec';
+        const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent sucessfully";
+                setTimeout(()=>{
+                    msg.innerHTML="";
+                },3000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
